@@ -1,0 +1,46 @@
+.flat-table {  
+  overflow: auto;
+  width: 100%;
+  font-family: 'Open Sans', sans;
+  /*table-layout: fixed;*/
+}
+  .flat-table th {
+    background-color: #EFEFEF;    
+    font-weight: bold;
+    padding: 0.3em 0.3em;
+    text-align: center;    
+    border: thin solid #ddd;
+  }
+  .flat-table td {    
+    color: rgb(111, 111, 111);
+    padding: 0.8em 0.6em 0.35em 0.6em;    
+    border: thin solid #eee;    
+    min-width: 80px;
+  }
+
+  .flat-table tr {
+    background-color: #F7F7F7;
+  }  
+
+  .flat-table tr:hover {
+    background-color: #FCFCFC;    
+  }
+
+  .label-success
+  {
+   background: #006837; 
+  }
+
+  .label-danger
+  {
+    background: #a50026;
+  }
+
+  .label-default
+  {
+    background: #999;
+  }
+
+  .container-fluid {
+   max-width:95%;
+}

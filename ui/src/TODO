@@ -1,0 +1,52 @@
+IMPORTANT
+
+find and list other bugs
+
+--Master v6.5.1 UI Regression - trend appears to be wrong - seems to be a problem with master v6.5.1 - runs but not shown in consolidated report
+--TestCase_VerifyDLCUpgradeStatus - shown as fail in trend but shown as pass in logs - cause: manual removal of rows from unified table - Find way to deal with manual removals
+--fix log file listing logic with better regex matching to eliminate wrong data
+--bug where sometimes, while filtering, empty table is shown with console error 'cannot read sno of undefined'
+--some test cases not shown in import export data project
+--past analysis not fetched for test cases with quote (') character
+--test cases with ',' character are not entered in DB
+--ATT-Pg NBI Regression has only 40 testcases in combined_analysis view - FIXED after project column added to view for NBI
+--test cases that don't have a corresponding log are not listed as start_time cannot be found
+
+fix step logs step order
+
+DB/PHAT CHANGES
+fix nbi test cases that end up with wrong start time due to wrong soapify of test case name - see bug list
+make v6.4.2 tests come up in AA
+
+
+fix issues where log index is not loaded
+make testcase definitions come from the right branch
+fix issue where test case definition is not loaded due to js error
+
+
+NOT IMPORTANT
+make unifiedreport table data sync with timing logic
+
+
+FROM OTHERS
+
+NBI View to show the quick failure summary per test script [additional tab]
+
+FOR DEMO
+
+PH fixed - Copy of TS164_TC9025_PMG_PH_API_PerformLogUpload_FileUpload
+
+
+DONE
+debug and fix trend display - appears to be done - analyze and fix problems
+fix git history - DONE fo nbi; doing for UI - DONE
+make ui execution report show link label with date - DONE
+--add testcase definition error display to user - DONE
+--nbi sanity project gives project not found error - DONE
+--check why nbi-regression dlc 100 is not added to list - DONE
+improve circle nav UX by changing dot indicator on click - DONE
+Report link to show the filtered view of Analysis Assistant - Both UI and NBI - DONE
+UI view of the test script to show the detailed report - DONE
+Total no of failures to be shown - DONE
+Trends to be shown through the same navigation pane using the "circles" - DONE
+fix interop project name ERROR - DONE

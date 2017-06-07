@@ -1,0 +1,518 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  background-color: #F7F7F7;
+}
+
+.details-table-container
+{
+  background-color: #fff;
+  padding-top: 1em;
+}
+
+.parallel-table-container
+{
+  background-color: #fff;
+  padding-top: 1em;
+  width: 800px;
+}
+
+.horizontal-scroll {
+  overflow-x: scroll;
+  /*width: 9999px;*/
+  white-space: nowrap;
+}
+
+.affix-top
+{
+
+}
+
+.filter-title
+{
+  width: 100%;
+  text-align: center;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+  font-size: 10px;
+  color: rgb(153, 153, 153);
+}
+
+.filter-dropdown
+{
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  padding-left: 1em;
+  border: thin solid #EFEFEF;
+  outline: none;
+}
+
+.filter-dropdown:hover
+{
+  border: thin solid #FC4E2A;
+}
+
+
+.affix
+{
+  z-index:10;
+  top:1.7em;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.15);
+     -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.15);
+          box-shadow: 0 8px 6px -6px rgba(0,0,0,0.15);
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.header-date-display
+{
+  border-bottom: thin solid;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color:#999;
+}
+
+.header-year-display
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: left;
+  color:#ccc;
+}
+
+.page-header
+{
+  background-color: #fff;
+  width: 100%;
+  margin-top: -1.6em;
+  padding-top: 2.6em;
+  font-family: 'Oswald', sans-serif;
+  color: #777;
+}
+
+.top-filter-pane
+{
+  background-color: rgb(239, 239, 239);
+  width: 100%;
+  margin-top: -1.7em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  color: rgb(230, 230, 230);
+}
+
+
+.details-table-row
+{
+  background-color: rgb(247, 247, 247);
+  color: rgb(51, 51, 51);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+.details-table-header-column
+{
+  border: none !important;
+  border-top: thin solid #ccc;
+  border-bottom: thin solid #ccc;
+  font-weight: normal;
+}
+
+.details-table-header-column input
+{
+  margin-top: -0.4em;
+  padding-left: 0.4em;
+  padding-bottom: 0.4em;
+  padding-top: 0.4em;
+  height: 2em;
+
+}
+
+
+.details-table-row:hover
+{
+  background-color: #fff;
+}
+
+.card-holder
+{
+  width: 228px;
+  padding: 1em;
+  display: inline-block;
+}
+
+.card-holder:hover
+{
+  background-color: #fff;
+}
+
+.card-heading
+{
+  text-transform: uppercase;;
+  font-size: 14px;
+}
+
+.center-align
+{
+  text-align: center;
+}
+
+.left-align
+{
+  text-align: left;
+}
+
+.right-align
+{
+  text-align: right;
+}
+
+.clickable
+{
+  cursor:pointer;
+  color: darkblue;
+  text-decoration: underline;
+}
+
+.status-icon
+{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background: #999;
+  display: inline-block;
+  margin: 1px;
+  padding: 4px;
+  border: 5.5px solid #999;
+}
+
+.status-icon:hover
+{
+  background: #999;
+}
+
+.success-icon {
+  border-color: #006837;
+  background: #006837;
+  cursor: pointer;
+}
+
+.failure-icon {
+  border-color: #a50026;
+  background: #a50026;
+  cursor: pointer;
+}
+
+.current-icon {
+  background: #111;
+}
+
+.trend-bar-graph-container
+{
+  height: 75px;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.donutchart-track{
+  fill: transparent;
+  stroke: #ECEBE7;
+  stroke-width: 13;
+}
+
+.donutchart-indicator {
+  fill: transparent;
+  stroke: #FC4E2A;
+  stroke-width: 13;
+  stroke-dasharray: 0 10000;
+  transition: stroke-dasharray .3s ease;
+}
+
+.donutchart {
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+
+
+.donutchart-text{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  fill: #607580;
+}
+
+.donutchart-text-val{
+  font-size:18px;
+}
+
+.donutchart-text-percent{
+  font-size:14px;
+}
+
+.donutchart-seperator {
+  stroke: #E6E6E6;
+  stroke-width: 1;
+}
+
+.donutchart-text-label{
+
+}
+
+
+.Dropdown-root {
+  position: relative;
+}
+
+.Dropdown-control {
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  padding-left: 1em;
+  background-color: #fff;
+  border: thin solid #EFEFEF;
+  outline: none;
+  transition: all 150ms ease;
+}
+
+.Dropdown-control:hover {
+  border: thin solid #337AB7;
+}
+
+.is-open .Dropdown-control {
+  border: thin solid #337AB7;
+}
+
+.Dropdown-arrow {
+  border-color: #337AB7 transparent transparent;
+  border-style: solid;
+  border-width: 4px 4px 0;
+  content: ' ';
+  display: block;
+  height: 0;
+  margin-top: -ceil(2.5);
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  width: 0
+}
+
+.is-open .Dropdown-arrow {
+  border-color: transparent transparent #337AB7;
+  border-width: 0 4px 4px;
+}
+
+.Dropdown-menu {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  margin-top: 1px;
+  /*max-height: 200px;
+  overflow-y: auto;*/
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+  padding-top:0.3em;
+  padding-bottom:0.3em;
+  padding-left: 0.2em;
+  padding-right: 0.3em;
+}
+
+.Dropdown-menu .Dropdown-group > .Dropdown-title{
+  padding: 8px 10px;
+  color: rgba(51, 51, 51, 1);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Dropdown-option {
+  /*box-sizing: border-box;*/
+  color: rgba(51, 51, 51, 0.8);
+  cursor: pointer;
+  display: block;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  padding-left: 0.6em;
+  margin-left:0.2em;
+}
+
+.Dropdown-option:last-child {
+  /*border-bottom-right-radius: 2px;
+   border-bottom-left-radius: 2px;*/
+}
+
+.Dropdown-option:hover {
+  background-color: #337AB7;
+  color: #fff;
+}
+
+.Dropdown-option.is-selected {
+  /*background-color: #FF7F0E;
+  color: #fff;*/
+}
+
+.Dropdown-noresults {
+  box-sizing: border-box;
+  color: #ccc;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+
+
+.centered-loader {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.loading-image
+{
+  position: relative;
+  bottom: -5px;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.progress {height: 1em;}
+
+.git-title
+{  
+  text-overflow: ellipsis;  
+  white-space: nowrap;
+  overflow: hidden;
+  max-width:500px;
+  font-size: 1.3em;
+  color: #666;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.hack-bootstrap-move-left {
+  margin-left: -1.8em;
+}
+
+.hack-bootstrap-move-right {
+  margin-left: 1.8em;
+}
+
+.flat-table {  
+  overflow: auto;
+  width: 100%;
+}
+  .flat-table th {
+    background-color: #EFEFEF;    
+    font-weight: bold;
+    padding: 0.3em 0.3em;
+    text-align: center;    
+    border: thin solid #ddd;
+  }
+  .flat-table td {    
+    color: rgb(111, 111, 111);
+    padding: 0.8em 0.6em 0.35em 0.6em;    
+    border: thin solid #eee;    
+    min-width: 80px;
+  }
+
+  .flat-table tr {
+    background-color: #F7F7F7;
+  }  
+
+  .flat-table tr:hover {
+    background-color: #FCFCFC;    
+  }
+
+  .label-success
+  {
+   background: #006837; 
+  }
+
+  .label-danger
+  {
+    background: #a50026;
+  }
+
+  .label-default
+  {
+    background: #999;
+  }
+
+  .container-fluid {
+   max-width:95%;
+}
+
+.barchart-tooltip {
+  background-color: #333;
+  color: #fff;
+  padding:0.2em 0.4em 0.2em 0.4em;
+  font-size: 11px;
+  border-radius: 3px;
+}
+.analysis-editor {
+  width:100%;
+  /*min-height: 10em;*/
+}
+
+.borderless {
+  border:none;
+}
+
+.modal-xl {
+  width: 80%;
+  margin: auto;
+  margin-top: 4em;
+}
+
+.someWiderColumn {
+  width: 50px;
+}
